@@ -1,15 +1,32 @@
-﻿<!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
 <meta name="monetization" content="$ilp.uphold.com/dPdrQinmELyw">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Test cases</title>
+<title>Scratch test case</title>
 
-<link rel="stylesheet" href="css/styles.css"> 
-<link rel="stylesheet" media="all" href="css/fonts.css" onload="this.media='all'">
+<style>
+	div.speech-link-fail
+	{
+		display: block;
+		color: black;
+		background-color: red;
+	}
+
+	div.speech-link-pass
+	{
+		display: none;
+		color: black;
+		background-color: green;
+	}
+</style>
+
+<link href='speech.css' rel='stylesheet' media='speech'>
+<link rel="stylesheet" href="../css/styles.css"> 
+<link rel="stylesheet" media="all" href="../css/fonts.css" onload="this.media='all'">
 </head>
 
 <body>
@@ -29,21 +46,14 @@
 <div class="wrapper">
 <div class="[ post ] [ flow ] [ flow-space-700 text-500 ]">
 <div class="[ post__body ] [ flow ] [ flow-space-700 pad-top-700 pad-bottom-700 ]">
-<h1>Test cases</h1>
+<h1>Scratch test case</h1>
 
-<p>>Test cases for HTML, CSS, JavaScript, ARIA, and SVG.</p>
-
-<h2>CSS test cases</h2>
-
-<ul>
-<li><a href="speech-media-type/index.html">CSS Speech media type</a></li>
-</ul>
-
-<h2>HTML test cases</h2>
-
-<ul>
-<li><a href="longdesc/index.html">HTML @longdesc attribute</a></li>
-</ul>
+<div class='speech-link-fail'>
+	Speech Media Link - Fail
+</div>
+<div class='speech-link-pass'>
+	Speech Media Link - Pass
+</div>        
 
 </div>
 </div>

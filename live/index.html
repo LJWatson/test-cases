@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessibility fundamentals</title>
+  <script src="./js/scorm/scorm-bathtub.js"></script>
+  <script src="./js/quizzical/core.js"></script>
+  <script src="./js/bathtub/core.js"></script>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./theme/css/core.css">
+  <link rel="stylesheet" href="./css/quizzical.css">
+
+  <link rel="stylesheet" href="./js/highlight/styles/shades-of-purple.min.css">
+  <script src="./js/highlight/highlight.min.js"></script>
+</head>
+
+<body>
+
+  <main>
+    <!-- Course title -->
+    <section data-bathtub="slide" class="theme-dark theme-template-title">
+      <div>
+        <h1>Accessibility fundamentals</h1>
+
+        <p>What is accessibility?</p>
+      </div>
+
+      <footer>
+        <p>&copy;TetraLogical</p>
+        <div>
+          <img src="images/Wiley_Wordmark_white.svg" alt="" class="theme-client-logo">
+          <p>Created by TetraLogical for Wiley</p>
+        </div>
+      </footer>
+    </section>
+
+    <!-- Introduction -->
+    <section data-bathtub="slide" class="theme-light theme-layout-full" data-bathtub-title="Welcome video">
+      <figure>
+  <video controls src="videos/module1.mp4">
+<track kind="captions" srclang="en" src="videos/module1.vtt">
+    Sorry, your browser doesn't support embedded videos.
+  </video>
+</figure>
+    </section>
+
+    <!-- Module -->
+    <section data-bathtub="slide" class="theme-light theme-layout-2-1" id="scorm-toc">
+      <h1>What is accessibility?</h1>
+
+      <div class="theme-container">
+        <div class="theme-panel">
+          <p>This is the first of 5 modules from the self-led Accessibility fundamentals training course:</p>
+
+          <ol>
+            <li aria-current="true"><strong>What is accessibility?</strong></li>
+            <li>Who does accessibility benefit?</li>
+            <li>How is accessibility measured?</li>
+            <li>How is accessibility tested?</li>
+            <li>Who is responsible for accessibility?</li>
+          </ol>
+        </div>
+
+        <div class="theme-panel theme-panel-bottom theme-panel-center">
+          <img src="theme/images/icon-clock.svg" alt="Time needed">
+          <p>About 10 minutes</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Module title purple -->
+    <section data-bathtub="slide" class="theme-purple theme-template-title">
+      <h1>What is accessibility?</h1>
+    </section>
+
+    <!-- Basic -->
+    <section data-bathtub="slide" class="theme-light">
+      <h1>What do you think accessibility is?</h1>
+
+      <p>Take a moment to think about what accessibility means to you.</p>
+
+      <details>
+        <summary>Reveal</summary>
+        <p>Perhaps you:</p>
+        <ul>
+          <li>Benefit from accessibility yourself</li>
+          <li>Know someone who benefits from accessibility</li>
+          <li>Have worked on a project with accessibility requirements</li>
+          <li>Work for an organisation committed to accessibility</li>
+          <li>Have a general interest in accessibility</li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- Basic -->
+    <section data-bathtub="slide" class="theme-light">
+      <h1>Making great products</h1>
+
+      <p>When you make your products and services accessible, you make them usable for everybody.</p>
+
+      <p>Making your products and services accessible means thinking about accessibility from inception to production,
+        and every point in between.</p>
+    </section>
+
+    <!-- Basic -->
+    <section data-bathtub="slide" class="theme-light">
+      <h1>Making great products</h1>
+
+      <p>Products and services include:</p>
+      <ul>
+        <li>Websites and webapps</li>
+        <li>Apps and applications</li>
+        <li>Documents</li>
+        <li>Video games and XR spaces</li>
+        <li>Smart speaker skills and actions</li>
+      </ul>
+    </section>
+
+    <!-- 75-25 split -->
+    <section data-bathtub="slide" class="theme-light theme-layout-3-1">
+      <h1>Making great products</h1>
+
+      <div class="theme-container">
+        <div class="theme-panel">
+          <p>Accessibility does not mean limited design or text-only content.</p>
+
+          <p>The BBC Weather apps for iOS and Android have lots of features and a design to match, and they were
+            launched with full accessibility.</p>
+
+          <p>Accessibility is great design!</p>
+        </div>
+        <div class="theme-panel">
+          <img src="images/bbc-weather-ios.png" alt="The BBC iOS weather app" class="theme-outline">
+        </div>
+      </div>
+    </section>
+
+    <!-- Full-screen video -->
+    <section data-bathtub="slide" class="theme-light theme-layout-full"
+      data-bathtub-title="Video: clear layout and design">
+      <iframe src="https://www.youtube.com/embed/tfkzj5VC9P8"
+        title="Web Accessibility Perspectives: Clear Layout and Design" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </section>
+
+    <!-- Basic -->
+    <section data-bathtub="slide" class="theme-light">
+      <h1>Mark of quality</h1>
+
+      <p>When products and services are accessible, it&#39;s a mark of quality.</p>
+
+      <p>When you make accessibility a core design principle for your products and services, it turns them into great
+        user experiences for everyone.</p>
+    </section>
+
+    <!-- Basic -->
+    <section data-bathtub="slide" class="theme-light">
+      <h1>Mark of quality</h1>
+
+      <p>Making your products and services accessible is a matter of professional pride.</p>
+
+      <p>You should not consider that your job is done unless you&#39;ve considered accessibility at every stage.</p>
+    </section>
+
+    <!-- 75-25 split -->
+    <section data-bathtub="slide" class="theme-light theme-layout-3-1">
+      <h1>Reducing risk</h1>
+
+      <div class="theme-container">
+        <div class="theme-panel">
+          <p>Accessibility is a legal requirement in many countries, including:</p>
+          <ul>
+            <li>Equality Act; UK</li>
+            <li>Disability Discrimination Act; Northern Ireland</li>
+            <li>Americans with Disabilities Act (ADA); USA</li>
+            <li>Rehabilitation Act, Section 508; USA</li>
+            <li>Disability Discrimination Act; Australia</li>
+            <li>Ontarians with Disabilities Accessibility Act (AODA); Canada</li>
+            <li>Accessibility Act; European Union (EU)</li>
+            <li>Public Sector Accessibility Directive; EU</li>
+          </ul>
+        </div>
+        <div class="theme-panel">
+          <img src="images/flag-uk-usa-australia-canada-portrait.png" alt="Flags for the UK, USA, Australia and Canada"
+            class="theme-outline">
+        </div>
+      </div>
+    </section>
+
+    <!-- 75-25 split -->
+    <section data-bathtub="slide" class="theme-light theme-layout-3-1">
+      <h1>Reducing risk</h1>
+
+      <div class="theme-container">
+        <div class="theme-panel">
+          <p>You may be familiar with some of the brands that have been successfully sued for failing to make their
+            products and services accessible:</p>
+          <ul>
+            <li>Domino&#39;s was sued in 2021 by Guillermo Robles, a blind person who was unable to order pizza using
+              their app or website</li>
+            <li>Beyoncé’s company Parkwood entertainment was sued in 2019 by Mary Conner Fin, a blind person who was
+              unable to purchase concert tickets from the star&#39;s website</li>
+            <li>Netflix was sued in 2012 by the National Association of the Deaf in the US, after the streaming giant
+              refused a request to caption their video content</li>
+          </ul>
+        </div>
+        <div class="theme-panel">
+          <img src="images/logos-dominos-pizza-parkwood-entertainment-netflix.png"
+            alt="Logo&#39;s for Domino&#39;s Pizza, Parkwood Entertainment and Netflix" class="theme-outline">
+        </div>
+      </div>
+    </section>
+
+    <!-- Basic -->
+    <section data-bathtub="slide" class="theme-light">
+      <h1>Reducing risk</h1>
+
+      <p>Most legal cases are brought in the USA because its laws are favourable, and the financial penalties imposed on
+        organisations found to be in breach of those laws are substantial.</p>
+
+      <p>Even though fewer cases reach court in other countries, significant damage can be done to an organisation&#39;s
+        reputation if the threat of a case is reported in the press.</p>
+    </section>
+
+    <!-- Basic -->
+    <section data-bathtub="slide" class="theme-light">
+      <h1>Maximising opportunity</h1>
+
+      <p>When your products and services are accessible it maximises your opportunities to:</p>
+
+      <ul>
+        <li>Reach more people</li>
+        <li>Grow your target audience</li>
+        <li>Create positive brand reputation</li>
+        <li>Generate strong brand loyalty</li>
+        <li>Increase the diversity of your teams</li>
+      </ul>
+    </section>
+
+    <!-- Basic -->
+    <section data-bathtub="slide" class="theme-light">
+      <h1>Maximising opportunity</h1>
+
+      <p>In 2020, the <a href="https://www.who.int/news-room/fact-sheets/detail/disability-and-health">World Health
+          Organisation</a> reported that 15% of the global population have a disability.</p>
+
+      <p>We know this is an underestimate, because it only includes documented disabilities like being blind or using a
+        wheelchair, it does not include cognitive disabilities, reading and literacy difficulties, age-related
+        disabilities, or many others.</p>
+
+      <p>Even a 15% increase in your target audience is worth it though!</p>
+    </section>
+
+    <!-- Basic -->
+    <section data-bathtub="slide" class="theme-light">
+      <h1>Maximising opportunity</h1>
+
+      <p>In 2020 the <a
+          href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2019-to-2020">UK
+          Government</a> reported that:</p>
+
+      <ul>
+        <li>22% of people have a disability</li>
+        <li>19% of working age people have a disability</li>
+        <li>46% of people over 65 have a disability</li>
+      </ul>
+
+      <p>If you make your products and services accessible, you could increase your target audience by as much as 46%!
+      </p>
+    </section>
+
+    <!-- Basic -->
+    <section data-bathtub="slide" class="theme-light">
+      <h1>Maximising opportunity</h1>
+
+      <p>In 2020 the <a href="https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html">US
+          Centers for Disease Control and Prevention (CDC)</a> reported that:</p>
+
+      <ul>
+        <li>1 in 4 adults have a disability</li>
+        <li>2 in 5 people over the age of 65 have a disability</li>
+        <li>1 in 4 women have a disability</li>
+        <li>2 in 5 non-Hispanic American Indians/ Alaska Natives have a disability</li>
+      </ul>
+
+      <p>If you make your products and services accessible, you could increase your target audience by as much as 26%!
+      </p>
+    </section>
+
+    <!-- Basic -->
+    <section data-bathtub="slide" class="theme-light">
+      <h1>Maximising opportunity</h1>
+
+      <p>When you make your products and services accessible, you help to generate a positive brand reputation for your
+        organisation.</p>
+
+      <p>People with disabilities are often loyal to brands that get accessibility right, because they have a good
+        experience when using their products or services.</p>
+
+      <p>People with disabilities also recommend accessible brands to friends and family, so the impact of accessibility
+        goes further than you might think.</p>
+    </section>
+
+    <!-- 50-50 split -->
+    <section data-bathtub="slide" class="theme-light theme-layout-1-1">
+      <h1>Doing the right thing</h1>
+
+      <div class="theme-container">
+        <div class="theme-panel">
+          <p>When products and services are accessible, it means that people can independently:</p>
+          <ul>
+            <li>Look after their health</li>
+            <li>Connect with other people</li>
+            <li>Manage their finances</li>
+            <li>Buy clothes, groceries, and gifts</li>
+            <li>Get an education</li>
+            <li>Do their job</li>
+          </ul>
+        </div>
+        <div class="theme-panel">
+          <img src="images/pwd-keyboard-mouth-stick.jpg"
+            alt="A man in a wheelchair sitting at his desk using a mouth stick with his laptop keyboard"
+            class="theme-outline">
+        </div>
+      </div>
+    </section>
+
+    <!-- Basic -->
+    <section data-bathtub="slide" class="theme-light">
+      <h1>Doing the right thing</h1>
+
+      <p>You&#39;re responsible for making your products and services accessible, and for enabling disabled people to
+        choose the product or service they want to use because of its features (not just because it&#39;s the only
+        accessible option available).</p>
+    </section>
+
+    <!-- Basic -->
+    <section data-bathtub="slide" class="theme-light">
+      <h1>Doing the right thing</h1>
+
+      <p>When you make your products and services accessible, you&#39;re helping to change <a
+          href="https://www.gov.uk/government/publications/uk-disability-survey-research-report-june-2021/uk-disability-survey-research-report-june-2021">these
+          perceptions</a>:</p>
+      <ul>
+        <li>73% of disabled people and 66% of the public think that disabled people are unable to live full and
+          independent lives</li>
+        <li>90% of disabled people and 86% of the public think disabled people do not have access to the education they
+          need to thrive in society</li>
+        <li>95% of disabled people and 92% of the public think that disabled people do not have access to the employment
+          opportunities needed to thrive in society</li>
+        <li>92% of disabled people and 88% of the public think that views held by the public are not helpful to disabled
+          people</li>
+      </ul>
+    </section>
+
+    <!-- Summary -->
+    <section data-bathtub="slide" class="theme-light theme-layout-2-1" id="scorm-toc">
+      <h1>Summary</h1>
+
+      <p>In this module you&#39;ve learned what accessibility is, and what it means for you, for your products and
+        services, and for your target audience.</p>
+
+      <p>You should aim to complete all five modules of the self-led <strong>Accessibility fundamentals</strong>
+        training course:</p>
+
+      <ol>
+        <li aria-current="true"><strong>What is accessibility?</strong></li>
+        <li>Who does accessibility benefit?</li>
+        <li>How is accessibility measured?</li>
+        <li>How is accessibility tested?</li>
+        <li>Who is responsible for accessibility?</li>
+      </ol>
+      <p>Once you've completed all five modules, why not test yourself by completing the Accessibility fundamentals knowledge evaluation module?</p>
+    </section>
+
+  </main>
+
+  <nav data-bathtub="navigation">
+    <ul class="row">
+      <!-- <li class="col"><button data-scorm-toc="scorm-toc">Topics</button></li> -->
+      <li class="col"><button data-scorm-goto="1">Back to start</button></li>
+      <li class="col"><button data-bathtub="previous">Previous</button></li>
+      <li class="col"><button data-bathtub="next">Next</button></li>
+    </ul>
+  </nav>
+
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+
+</html>

@@ -1,2 +1,7 @@
-div.speech-type-fail {display: none;}
-div.speech-type-pass {display: block;}
+div.speech-type-fail {
+    display: none;
+}
+
+div.speech-type-pass {
+    display: block;
+}

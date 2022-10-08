@@ -8,29 +8,17 @@
 <body>
 <h1>Scratch test case</h1>
 
-<svg>
+<h2>Speak</h2>
 
-<g role="table">
-<g role="row">
-<g></g>
-<g role="columnheader"><text>Morning</text></g>
-<g role="columnheader"><text>Afternoon</text></g>
-</g>
+<p style="speak:never;">This should never be spoken.</p>
 
-<g role="row">
-<g role="rowheader"><path role="img"><title>Alice</title></path></g>
-<g role="cell"><g role="img" aria-label="5 cups"></g></g>
-<g role="cell"><g role="img" aria-label="10 cups"></g></g>
-</g>
+<p style="speak:always;">This should always be spoken.</p>
 
-<g role="row">
-<g role="rowheader"><path role="img" aria-labelledby="bob"><title id="bob">Bob</title></path></g>
-<g role="cell"></g>
-<g role="cell"></g>
-</g>
-</g>
+<h2>Speak as</h2>
 
-</svg>
+<p style="speak-as:digits;">07921168551</p>
+
+<p style="speak-as:spell-out;">NATO</p>
 
 </body>
 </html>

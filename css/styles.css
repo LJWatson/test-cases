@@ -1095,23 +1095,23 @@ table {
     border-collapse: collapse;
     /*border: thick black solid;*/
 }
-.longdesc tr {
+.results tr {
     border: solid;
     border-width: 1px 0;
 }
-.longdesc td {
+.results td {
     text-align: center;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
 }
-.longdesc td img {
+.results td img {
     display: block;
     margin-left: auto;
     margin-right: auto; 
 }
-.longdesc tr:first-child th {
+.results tr:first-child th {
     vertical-align: top;
 }
-.longdesc tr:first-child, tr:last-child {
+.results tr:first-child, tr:last-child {
     border: none;
 }

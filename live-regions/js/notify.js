@@ -6,7 +6,6 @@
 
     notification.setAttribute("aria-live", "polite");
     notification.setAttribute("aria-atomic", "true");
-notification.setAttribute("aria-hidden", "true");
 
     function notify() {
         notification.innerText = "You've been notified!";

@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>Accessible tabs</title>
+    <style>
+        .tabs {
+  /* Basic styling for the tabs container */
+}
+
+.tab-list {
+  /* Styling for the list of tabs */
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tab {
+  /* Styling for individual tabs */
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.tab button {
+  /* Remove default button styling */
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.tab.active {
+  /* Styling for the active tab */
+  background-color: #eee;
+  border-bottom: none;
+}
+
+.tab-panels {
+  /* Styling for the tab content container */
+}
+
+.tab-panel {
+  /* Styling for individual tab content panels */
+  display: none;
+  padding: 20px;
+}
+
+.tab-panel.active {
+  /* Styling for the visible tab panel */
+  display: block;
+}
+    </style>
+</head>
+<body>
+    <div class="tabs">
+        <ul class="tab-list" role="tablist">
+          <li class="tab active" role="tab" aria-selected="true" aria-controls="tab1">
+            <button>Tab 1</button>
+          </li>
+          <li class="tab" role="tab" aria-selected="false" aria-controls="tab2">
+            <button>Tab 2</button>
+          </li>
+          <li class="tab" role="tab" aria-selected="false" aria-controls="tab3">
+            <button>Tab 3</button>
+          </li>
+        </ul>
+        <div class="tab-panels">
+          <div id="tab1" class="tab-panel active" role="tabpanel" aria-labelledby="tab1-button">
+            </div>
+          <div id="tab2" class="tab-panel" role="tabpanel" aria-labelledby="tab2-button">
+            </div>
+          <div id="tab3" class="tab-panel" role="tabpanel" aria-labelledby="tab3-button">
+            </div>
+        </div>
+      </div>
+      <script>
+        const tabs = document.querySelectorAll('.tab');
+const tabPanels = document.querySelectorAll('.tab-panel');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // Deactivate all tabs
+    tabs.forEach(tab => tab.classList.remove('active'));
+    // Hide all tab panels
+    tabPanels.forEach(panel => panel.classList.remove('active'));
+
+    // Activate the clicked tab
+    tab.classList.add('active');
+    // Show the corresponding tab panel
+    const panelId = tab.getAttribute('aria-controls');
+    document.getElementById(panelId).classList.add('active');
+  });
+});
+
+      </script>
+</body>
+</html>

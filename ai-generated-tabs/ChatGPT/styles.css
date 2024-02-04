@@ -1,0 +1,25 @@
+/* Style for tabs and tab content */
+.tabs {
+    display: flex;
+}
+
+.tab-button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tab-button:focus {
+    outline: 2px solid #007bff;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+/* Show the first tab by default */
+.tab-content:first-child {
+    display: block;
+}

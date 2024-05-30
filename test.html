@@ -11,9 +11,15 @@
 <main>
 <h1>Scratch test page</h1>
 
-<p>Test for <code>aria-roledescription</code>.</p>
+<p>This is a test case for a solution to a specific situation in which it is necessary to make a non-interactive element focusable in order to provide equivalent functionality to keyboard users (including screen reader users), that is otherwise available only to mouse users.</p>
 
-<p>Hello <span role="paragraph" aria-roledescription="focusable" tabindex="0">beep</span></p>              
+<p>Making a non-interactive element focusable can cause confusion for screen reader users if they do not realise why a non-interactive element has received focus. Using <code>aria-role-description</code> is one potential technique that is being explored.</p>
+
+<p>Use the <kbd>Tab</kbd> key to move focus onto the text below.</p>
+ 
+<p tabindex="0" role="paragraph" aria-roledescription="Relative time">Comment posted one week ago</p>
+
+
 
 </body>
 </html>

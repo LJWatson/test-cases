@@ -30,14 +30,19 @@
 <div class="[ post__body ] [ flow ] [ flow-space-700 pad-top-700 pad-bottom-700 ]">
 <h1>Test case: ARIA live regions</h1>
 
-<p>This is a (very rough) prototype to test the way ARIA live regions work with screen readers, especially when a Braille display is being used in partnership with the screen reader.</p>
+<p>This is a (very rough) prototype to test the way ARIA live regions work with screen readers.</p>
 
-<p>Here is how to use it:</p>
+
+<p>The script triggers three consecutive notifications. There is a 250ms delay between each notification. The live region is set to "polite", meaning that screen readers should speak each notification in its entirety before speaking the next.</p>
+
+<p>The notifications are:</p>
 
 <ol>
-<li>Move to the "Notify me" button and activate it</li>
-<li>Wait a moment and you should hear "You've been warned!"</li>
+<li>"This is the first notification. It is intended to take longer than one second for a screen reader to speak, so the concatenation of notifications can be tested."</li>
+<li>"Ping!"</li>
+<li>"This is the third notification."</li>
 </ol>
+
 
 <p><b>Note:</b> with apologies, the prototype is only working in Chrome at the moment.</p>
 

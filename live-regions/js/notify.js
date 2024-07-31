@@ -8,12 +8,20 @@
     notification.setAttribute("aria-atomic", "true");
 
     function notify() {
-        notification.innerText = "You've been notified!";
+        notification.innerText = "This is the first notification. It is intended to take longer than one second for a screen reader to speak, so the concatenation of notifications can be tested.";
 
-        wait(500)
+        wait(200)
             .then(() => {
-                notification.innerText = "";
-                console.log("This message will be logged after 500ms");
+                notification.innerText = "Ping!";
+                console.log("This message will be logged after 250ms");
+
+                wait(250)
+                    .then(() => {
+                        notification.innerText = "This is the third notification.";
+                        console.log("This message will be logged after 250ms");
+
+                    })
+
             })
     }
 
